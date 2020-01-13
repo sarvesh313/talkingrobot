@@ -1,0 +1,657 @@
+
+import string
+import random
+from datetime import datetime
+import time
+import os
+
+def consec():
+  week = input("How many weeks?: ")
+  day = input("How many days?: ")
+  hour = input("How many hours?: ")
+  minute = input("How many minutes?: ")
+  second = input("How many seconds?: ")
+  wee = int(week)
+  da = int(day)
+  hou = int(hour)
+  minu = int(minute)
+  seco = int(second)
+  sec = 0
+  for week in week:
+    sec += 604800
+  for day in day:
+    sec += 86400
+  for hour in hour:
+    sec += 3600
+  for minute in minute:
+    sec += 60
+  sec = sec + seco
+  print("There are", sec, "seconds in", day, "days", hour, "hours,", minute, "minutes and", second, "seconds")
+  robot_wait()
+
+def spread():
+  mat = input("Enter a matrix: ")
+  os.system("clear")
+  for letter in mat:
+    print(letter)
+    time.sleep(0.5)
+  print()
+  print("Matrix:", mat)
+  print()
+  time.sleep(5)
+  robot_wait()
+
+def WPM():
+  import os
+  from datetime import datetime
+  import time
+  WP = input("Enter your Words Per Minute: ")
+  W = int(WP)
+  CPM = (W*5)
+  PPM = (W/200)
+  os.system("clear")
+  print("Please Wait")
+  time.sleep(5)
+  os.system("clear")
+  print(W, "Words Per Minute")
+  print(CPM, "Characters Per Minute")
+  print(PPM, "Paragraph Per Minute")
+  robot_wait()
+def oORe():
+  num = input("Enter a number: ")
+  Num = int(num)
+  os.system("clear")
+  print("Please Wait")
+  time.sleep(6)
+  if (Num % 2) == 0:
+    print("Even")
+  else:
+    print("Odd")
+  print("Thank you for using Odd or Even")
+  robot_wait()
+
+def bye():
+  print("Ok, I gotta go now")
+  print("It's been nice talking to you")
+  print("It's also been nice playing with you")
+  print(("Bye ") + (first_name))
+
+  q = input("Do you think i'm programmed well? : ")
+  if q.lower() == "no":
+    print("Oh ok")
+    hy = input("Why do you think i'm programmed bad?:")
+    print("Oh, thank you for your feedback")
+  else:
+    print("Thank you")
+  
+  print("Thanks for using Srobot")
+  print()
+  print("This is my logo")
+  print("|------------------------|")
+  print("|    _ _____             |")
+  print("|   //     \             |")
+  print("|  | \____  \            |")
+  print("|  |      \  \_________  |")
+  print("|  | \____/ arveshwar's\ |")
+  print("|  |  Python Programs  / |")
+  print("| /___________________/  |")
+  print("|________________________|")  
+  print("you can contact the creator at sarveshwar313@gmail.com")
+  input("Press enter to continue...")
+  os.system("clear")
+def end():
+  print("Thanks for using Srobot")
+  print()
+  print("This is my logo")
+  print("|------------------------|")
+  print("|    _ _____             |")
+  print("|   //     \             |")
+  print("|  | \____  \            |")
+  print("|  |      \  \_________  |")
+  print("|  | \____/ arveshwar's\ |")
+  print("|  |  Python Programs  / |")
+  print("| /___________________/  |")
+  print("|________________________|")  
+  print("you can contact the creator at sarveshwar313@gmail.com")
+  input("Press enter to continue...")
+  os.system("clear")
+def crArr():
+  import os
+  bDay = input("When is your Birthday?: ")
+  bYear = input("What is your Birthyear?: ")
+  Age = input("What is your age?: ")
+  FirNa = input("What is your first name?: ")
+  LasNa = input("What is your last name?: ")
+  bPlace = input("Where is your birthplace?: ")
+  Name = FirNa + " " + LasNa
+  os.system("clear")
+  print(Name, ": ")
+  Person = {"Name" : Name, "Birthday" : bDay, "Birthyear" : bYear, "Age" : Age, "Birthplace" : bPlace}
+  print(Person)
+  input("Press enter to continue...")
+  os.system("clear")
+  robot_wait()
+
+def numcount():
+  am = input("Enter a number matrix or numbers: ")
+  numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+  numycount = 0
+  for number in am:
+    if number in numbers:
+      numycount += 1
+    else:
+      print()
+  os.system("clear")
+  print("Please Wait....")
+  time.sleep(4)
+  print("Matrix:", am)
+  print("There are", numycount, "numbers in your matrix")
+  robot_wait()
+
+def vowelcoun():
+  jmatrix = input("Enter a Matrix or Word: ")
+  mat = int(len(jmatrix))
+  vowel = ("AEIOU").lower()
+  consonants = ("ABCDEFGHIJKLMNOPQRSTUVWXYZ").lower()
+  vowcoun = 0
+  concoun = 0
+  for letter in jmatrix:
+    if letter in vowel:
+      vowcoun += 1
+    elif letter in consonants:
+      concoun += 1
+    else:
+      print()      
+  os.system("clear")
+  print("Please Wait...")
+  time.sleep(5)
+  os.system("clear")
+  print("Matrix:", jmatrix)
+  print()
+  print("There are", vowcoun, "vowels in your matrix")
+  conson = input("Do you want to see how many consonants are in your matrix?: ")
+  if conson == "YES".lower():
+    os.system("clear")
+    print("There are", concoun, "consonants in your matrix")
+  else:
+    print("Oh ok")
+  print("Thank you for using vowel counter")
+  input("Press enter to continue...")
+  os.system("clear")
+  robot_wait()
+
+def reverser():
+  print("Welcome to the Sentence Reverser")
+  sent = input("Enter a sentence or word to be reversed: ")
+  os.system("clear")
+  print("Please Wait...")
+  print("Go check out more programs at sarvesh313.wordpress.com")
+  time.sleep(5)
+  os.system("clear")
+  revsent = str(sent[::-1])
+  print("Your sentence reversed is:")
+  print(revsent)
+  print()
+  input("Press enter to continue...")
+  os.system("clear")
+  robot_wait()
+def calculator():
+  print("Welcome to The Calculator")
+  def add(x, y):
+   return x + y
+
+  def subtract(x, y):
+   return x - y
+
+  def multiply(x, y):
+   return x * y
+
+  def divide(x, y):
+   return x / y
+
+  def calcend():
+    print("Thank you for using my calculator")
+    print("Check out more programs at sarvesh313.wordpress.com")
+    time.sleep(3)
+    os.system("clear")
+    robot_wait()
+
+  print("Select operation")
+  print("1.Add")
+  print("2.Subtract")
+  print("3.Multiply")
+  print("4.Divide")
+
+  choice = input("Enter choice(1/2/3/4):")
+
+  num1 = int(input("Enter first number: "))
+
+  num2 = int(input("Enter second number: "))
+  os.system("clear")
+  if choice == '1':
+    print("Please Wait...")
+    time.sleep(4)
+    print(num1, "+", num2, "=", add(num1,num2))
+    calcend()
+
+  elif choice == '2':
+    print("Please Wait...")
+    time.sleep(4)
+    print(num1, "-", num2, "=", subtract(num1,num2))
+    calcend()
+
+  elif choice == '3':
+    print("Please Wait...")
+    time.sleep(4)
+    print(num1, "*", num2, "=", multiply(num1,num2))
+    calcend()
+
+  elif choice == '4':
+    print("Please Wait...")
+    time.sleep(4)
+    print(num1, "/", num2, "=", divide(num1,num2))
+    calcend()
+
+  else:
+     print("Invalid input")
+     calcend()
+
+def robotrigenerator():
+  def Let():
+    string.ascii_letters
+    os.system("clear")
+    print("Please Wait...")
+    print("Check out more programs at sarvesh313.wordpress.com")
+    time.sleep(4)
+    os.system("clear")
+    print("Your random letter is", random.choice(string.ascii_letters))
+    time.sleep(9)
+    os.system("clear")
+
+  def Num():
+    os.system('clear')
+    a = int(input("Starting Number: "))
+    b = int(input("Ending Last Number: ")) 
+    os.system("clear")
+    print("Please Wait...")
+    print("Check out more programs at sarvesh313.wordpress.com")
+    time.sleep(4)
+    os.system("clear")
+    print("Your random number is", random.randint(a, b))
+    time.sleep(9)
+    os.system("clear")
+
+  def LetNum():
+    string.ascii_letters
+    os.system("clear")
+    a = int(input("Starting Number: "))
+    b = int(input("Ending Last Number: ")) 
+    os.system("clear")
+    print("Please Wait...")
+    print("Check out more programs at sarvesh313.wordpress.com")
+    time.sleep(4)
+    os.system("clear")
+    print("Your random code is", (random.choice(string.ascii_letters)) + str(random.randint(a, b)))
+    time.sleep(9)
+    os.system("clear")
+
+  def Endo():
+    ag = input("Have you seen my website?: ")
+    if ag == "Yes".lower():
+      print("Ok, There are many programs on my website ")
+      ab = input("Do you like my programs?: ")
+      if ab == "Yes".lower():
+        print("Thank you")
+        print("I'm glad you like it,")
+        print("I spent a lot of time on it")
+      else:
+        print("Oh ok")
+    else:
+      print("Go see my website at sarvesh313.wordpress.com")
+    time.sleep(3)
+    print("You have reached the end of the program")
+    print("Thank you for playing") 
+    pres = input("Press enter to continue...")
+    os.system("clear") 
+
+  print("Welcome to Random Generator")
+  print("Please Wait... Loading")
+  time.sleep(3)
+  os.system("clear")
+  print()
+  print("1.Only Letters[1]")
+  print("2.Only Numbers[2]")
+  print("3.Numbers and Letters[3]")
+  print()
+  L = "1"
+  N = "2"
+  LN = "3"
+  type = input("Which Setting?: ")
+
+  if type == L:
+    Let()
+    Endo()
+
+  if type == N:
+    Num()
+    Endo()
+
+  if type == LN:
+    LetNum()
+    Endo()
+  robot_wait()
+def robotwcount():
+  print("Welcome to Word Counter")
+  inup = input("Enter some characters: ")
+  sp = " "
+  num = 1
+  for le in inup:
+    if le == sp:
+      num = num + 1
+  print(num)
+  time.sleep(8)
+  robot_wait()
+def robot_wait():
+  input("press enter to continue..")
+  robot_main() 
+def robot_wait2():
+  input("press enter to continue..")
+def robotcounter():
+  print("Welcome to Character Counter!")
+  abcd = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r","s", "t", "u", "v", "w", "x", "y", "z", " "]
+  numsi = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+  eup = input("Enter some letters, numbers or something: ")
+  num = 0
+  for let in eup:
+    if let.lower() in abcd or numsi:
+        num = num + 1
+    elif let not in abcd or numsi:
+      print("Invalid input")
+    else:
+      print(num)
+  print(num, "Characters")
+  robot_wait()
+
+def robo_speech():
+  from gtts import gTTS
+  import os  
+  from datetime import datetime
+  import time
+  spech = input("What do you want me to say?: ")
+  tts = gTTS(text=spech, lang='en')
+  tts.save("good.mp3")
+  print("please wait.. loading")
+  time.sleep(5)
+def robot_fib():
+  n = input("Enter a number: ")
+  a = 0
+  b = 1
+  fibnum = [0,1]
+  count = 2
+  while count < int(n):
+    c = (a + b)
+    count += 1
+    fibnum.insert(count,c)
+    a = b
+    b = c
+  j = 0
+  for num in fibnum:
+    j += 1
+    print(str(j), "-> ", num)
+  robot_wait()
+def robot_dice():
+  import random
+  print(random.randint(1,6))
+  import os
+  e = input("Do you want to roll again.. press 'Y' to continue, 'N' to exit: ")
+  os.system('clear')
+  if (e =='Y') or (e == 'y'):
+    robot_dice()
+  else:
+    robot_wait()
+def chat():
+    print("Welcome to Chat Room \n")
+    robot_chat() 
+def speech():
+    print("Welcome to Robo Talk \n")
+    robo_speech()
+    robot_wait()
+def fibonaccinums():
+    print("Welcome to Fibonacci Series Center \n")
+    robot_fib()
+def dice():
+    print("Welcome to Dice Table \n")
+    robot_dice()
+def guide():
+    print("Help Page: \n")
+    print("Welcome to Robot Sarvesh")
+    print()
+    print("In Robot Sarvesh you have many programs you can run with the click of two keys")
+    print()
+    print("Thank you for choosing Robot Sarvesh")
+    print("Hope you enjoy Robot Sarvesh")
+    print()
+    print("1. In Speech, you enter a saying and then a robot says it")
+    print("2.In Fibonnacci Numbers, you can find out numbers of fibonnacci")
+    print("3.In Dice, you can generate a random number between 1 through 6")
+    print("4.In Character Counter, you can enter in characters and it will count how many there are")
+    print("5.In Word Counter you can count how many words there are")
+    print("6.In Random Generator you can get a random code, letter or numbers  ")
+    print("7.In Calculator you can Add, Subtract, Divide or multiply numbers")
+    print("8.In Word Reverser you can reverse sentences and words")
+    print("9.In Vowel and Consonant counter you can count how many vowels and consonants are in your matrix")
+    print("10.In Number Counter you count how many numbers are in your matrix")
+    print("11.In Array Generator you can generate an array for anyone you want")
+    print("12.In Odd or Even you can find out if a number is odd or even")
+    print("13.In How Fast You Type you have to enter your words per minute and it will tell you how many characters and paragraph per minute")
+    print("14.In Matrix Vertical you can spell out a matrix vertically")
+    print("15.In Second Counter you can turn years, hours, and minutes into seconds")
+    print()
+    robot_wait()
+def exit():
+    import os
+    e = input("Are you sure you want to exit.. press 'Y' to exit: ")
+    os.system('clear')
+    if (e =='Y') or (e == 'y'):
+      print("Good Bye.. exiting Robo meet., see you again")
+      bye()
+      quit()
+      os.system("clear")
+    else:
+      robot_main()
+def exit1():
+    os.system("clear")
+    os.system("clear")
+    nm = input("Are you sure you want to exit.. press 'Y' to exit: ")
+    if (nm =='Y') or (nm == 'y'):
+      print("Good Bye.. exiting Robo meet., see you again")
+      bye()
+      quit()
+      os.system("clear")
+    else:
+      robot_main()
+def printOptions():
+    print("Welcome to Robot Sarvesh...\n")
+    print("1. Speech")
+    print("2. Fibonacci Numbers")
+    print("3. Dice")
+    print("4. Character Counter")
+    print("5. Word Counter")
+    print("6. Random Generator")
+    print("7. The Calculator")
+    print("8. Word Reverser")
+    print("9. Vowel and Consonant Counter")
+    print("10. Number Counter")
+    print("11. Array Generator")
+    print("12. Odd or Even")
+    print("13. How Fast You Type")
+    print("14. Matrix Vertical")
+    print("15. Second Counter")
+    print("16. Help")
+    print("17. Exit")
+    print()
+
+def robot_main():
+  import os
+  os.system("clear")
+  input("Press enter to continue...")
+  os.system('clear')
+  printOptions()
+  argument = input ("Enter your option: ")
+  os.system('clear')
+  if (argument == "1"):     
+         speech()
+  elif (argument == "2"):
+         fibonaccinums()
+  elif (argument == "3"):
+        dice()
+  elif (argument == "16"):
+        guide()
+  elif (argument == "4"):
+        robotcounter()
+  elif (argument == "17"):
+        exit()
+  elif (argument == "5"):
+        robotwcount()
+  elif (argument == "6"):
+        robotrigenerator()
+  elif (argument == "7"):
+        calculator()
+  elif (argument == "8"):
+        reverser()
+  elif (argument == "9"):
+        vowelcoun()
+  elif (argument == "10"):
+        numcount()
+  elif (argument == "11"):
+        crArr()
+  elif (argument == "12"):
+        oORe()
+  elif (argument == "13"):
+        WPM()
+  elif (argument == "14"):
+        spread()
+  elif (argument == "15"):
+        consec()
+  else:
+        print("Invalid Input")
+        print("Please Wait...")
+        print("Redirecting...")
+        time.sleep(4)
+        os.system("clear")
+        exit1()
+
+
+import os
+
+os.system("clear")
+print("Hi, my name is Sarvesh")
+print("Nice to meet you")
+print("What's your name?")
+first_name = input("Enter your name: ")
+
+a2345 = input("How old are you: ")
+
+if a2345.lower() == "10":
+  print("I'm 10 too")
+else:
+  print("Oh your", a2345, ", I'm 10")
+
+print("how are you feeling today")
+print((first_name) + ("?"))
+
+happiness = input("How are you feeling today? : ")
+
+print("oh ok")
+
+reasoning = input("why? : ")
+
+hyello = "yes"
+rid = input("Do you want to hear a riddle?: ")
+if rid == hyello.lower():
+  print("Joe's father has 4 sons")
+  print("One is named January")
+  print("One is named Febuary")
+  print("One is named March")
+  ridd = input("What's the last one named?: ")
+  ator = "JOE"
+  if ridd == ator.lower():
+    print("Correct")
+  else:
+    print("The answer is Joe")
+    print("Because it's Joe's Father")
+
+print("Ok, let's change the topic")
+
+print("What do you want to talk about?")
+
+topic = input("What do you want to talk about? : ")
+
+if topic.lower() == "nothing":
+  print("Oh ok")
+else:
+  print(("what do you know about the ") + (topic) + ("?"))
+  fact = input(("what do you know about ") + (topic) +("? : "))
+  print(fact)
+  print("oh that's a interesting fact.")
+
+realcad = "yes"
+coad = input("Do you like to code? : ")
+if (coad.lower)() == realcad:
+  print("Oh, I like to code too")
+  print("I think coding is fun")
+else:
+  print("Well, I like to code")
+  print("I think coding is fun")
+
+res = input("Do you think we should learn how to code? :")
+
+if (res.lower)() == "yes":
+  rea = input("Yeah me too, but why? :")
+  print(rea)
+  print("Ok")
+else:
+  print("oh ok")
+  rea1 = input("Why not?:")
+  print(rea1)
+  
+
+
+
+myname = "Sarvesh"
+
+fsubject = input("What's your favourite subject in school? :")
+msubject = "Math"
+
+if (fsubject.lower)() == msubject:
+  print(("oh, your favourite subject in school is ") + (fsubject) + (", my favourite subject in school is ") + (msubject) + (" too."))
+
+else:
+  print(("oh, your favourite subject in school is ") + (fsubject) + (", my favourite subject in school is ") + (msubject))
+
+def enyned():
+  q = input("Do you think i'm programmed well? : ")
+  if q.lower() == "no":
+    print("Oh ok")
+    hy = input("Why do you think i'm programmed bad?: ")
+    print("Oh, thank you for your feedback")
+    os.system("clear")
+    end()
+  else:
+    print("Thank you")
+    time.sleep(2)
+    os.system("clear")
+    end()
+  time.sleep(10)
+nnnn = input("Do you want to see my app? : ")
+if nnnn.lower() == "yes":
+  robot_main()
+  
+  
+else:
+  print("ok")
+  print("Ok, I gotta go now")
+  print("It's been nice talking to you")
+  print(("Bye ") + (first_name))
+  enyned()
+
